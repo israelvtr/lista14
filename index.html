@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeçalho Exemplo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>]
+<style>
+    /* Reset básico */
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    /* Estilo para o cabeçalho */
+    header {
+        background-color: #007bff;
+        /* Cor azul para o fundo do cabeçalho */
+        padding: 10px 0;
+        position: fixed;
+        /* Fixa o cabeçalho no topo */
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        /* Garante que o cabeçalho fique acima da imagem de fundo e do fundo preto */
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        /* Sublinhado ao passar o mouse */
+    }
+
+    /* Estilo para o conteúdo principal */
+    main {
+        margin-top: 60px;
+        /* Espaço suficiente para o cabeçalho fixo */
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        /* Garante que o main ocupe toda a altura da tela */
+    }
+
+    /* Estilo para a seção da imagem de fundo */
+    .background-image {
+        height: 300px;
+        /* Altura da imagem de fundo */
+        background: url(img/topo.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    /* Estilo para o fundo preto */
+    .black-background {
+        flex: 1;
+        /* Faz com que a seção ocupe o espaço restante */
+        background-color: #000;
+        /* Cor preta para o fundo */
+        color: white;
+        /* Cor do texto na área preta */
+        padding: 20px;
+        /* Padding para o conteúdo dentro da área preta */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Estilo para o contêiner de texto */
+    .text-container {
+        background-color: #fff;
+        /* Fundo branco para o contêiner de texto */
+        color: #000;
+        /* Cor do texto preto */
+        padding: 20px;
+        /* Espaçamento interno */
+        border-radius: 8px;
+        /* Cantos arredondados */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        /* Sombra suave */
+        max-width: 800px;
+        /* Largura máxima para o texto */
+        width: 100%;
+        /* Largura total até o máximo definido */
+        box-sizing: border-box;
+        /* Inclui padding e bordas na largura total */
+        text-align: left;
+        /* Centraliza o texto */
+
+    background-color: #f0f0f0; /* Cor cinza claro para o fundo do texto */
+    padding: 20px; /* Padding para o texto */
+    border-radius: 8px; /* Cantos arredondados */
+
+    }
+
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    background-color: #f0f0f0; /* Cor de fundo da página para contraste */
+}
+
+.texto-hover {
+    display: inline-block; /* Permite que o fundo preto seja apenas ao redor do texto */
+    font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: white; /* Cor do texto */
+    background-color: black; /* Cor de fundo do texto */
+    padding: 10px; /* Espaçamento ao redor do texto */
+    border-radius: 5px; /* Borda arredondada (opcional) */
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar o mouse */
+
+/* Efeito ao passar o mouse */
+.texto-hover:hover 
+    color: orange; /* Cor do texto quando o mouse está sobre ele */
+}
+
+</style>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minha Página</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">UBER</a></li>
+                    <li><a href="#">DIRIJA CONOSCO</a></li>
+                    <li><a href="#">PLANOS</a></li>
+                    <li><a href="#">SOBRE NÓS</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                    <li><a href="#">CONTATE-NOS</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="background-image">
+                <!-- Esta seção contém a imagem de fundo -->
+            </section>
+            <section class="black-background">
+                <div class="content">
+                    <div class="text-container">
+                        <h1 class="left"><strong>UBER</strong></h1>
+                        <p>
+                        <h3><strong>A plantaforma de aposentadoria com maior número de benefícios do Brasil</strong>
+                        </h3>
+                        </p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis amet possimus commodi
+                            quibusdam repudiandae rem distinctio, soluta, quasi cum, totam qui libero laudantium sed
+                            nihil aut inventore praesentium officiis sunt.
+                            Quas, modi incidunt nesciunt, magnam, ea voluptate molestias possimus veniam expedita vitae
+                            accusantium recusandae unde. Sit sed voluptatum corrupti perspiciatis asperiores ipsum nam
+                            tenetur quaerat, accusamus nisi necessitatibus est praesentium?</p>
+                            <div class=" começa +"> começa + </div>
+                    </div>
+
+            </section>
+        </main>
+    </body>
+
+    </html>
